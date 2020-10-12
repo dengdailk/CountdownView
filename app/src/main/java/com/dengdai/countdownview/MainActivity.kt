@@ -3,7 +3,6 @@ package com.dengdai.countdownview
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import com.dengdai.countdownview.KeepCountdownView.KeepCountdownView
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
@@ -11,7 +10,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        keep1.countdownListener = object : KeepCountdownView.CountdownListener{
+        keep1.countdownListener = object : com.dengdai.countdownview.KeepCountdownView.CountdownListener{
             override fun onStart() {
 
             }
